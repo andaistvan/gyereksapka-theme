@@ -1,0 +1,55 @@
+// ***************************************************************
+// layout
+// ***************************************************************
+.main-container-woo{
+   width: 94%;
+   max-width: 960px;
+   margin: 20px auto 0 auto;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   .woo-contentbox{
+      width: 80%;
+   }
+   .woo-sidebarbox{
+      width:18%;
+   }
+}
+
+@media(max-width: 790px){
+   .main-container-woo{
+      .woo-contentbox{
+         width:100%;
+      }
+      .woo-sidebarbox{
+         display: none;
+      }
+   }
+}
+
+// ***************************************************************
+// archive product
+// ***************************************************************
+.woocommerce ul.products li.product .button{
+   display: none;
+}
+
+.woocommerce ul.products li.product h3{
+   font-family: 'Amatic SC', cursive;
+   font-size: 30px;
+   font-weight: bold;
+   text-align: center;
+   color: $main-text;
+}
+
+// ***************************************************************
+// single product
+// ***************************************************************
+div.summary.entry-summary{
+   padding: 0 15px 0 15px;
+}
+
+h1.product_title.entry-title{
+   font-size: 30px;
+   text-align: left;
+}

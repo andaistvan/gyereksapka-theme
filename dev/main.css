@@ -222,9 +222,82 @@ footer#colophon {
 /*--------------------------------------------------------------
 # widgets
 --------------------------------------------------------------*/
+h2.widget-title {
+  text-align: center; }
+
+div.menu-sidebar-evszak-container ul#menu-sidebar-evszak.menu li {
+  display: block; }
+  div.menu-sidebar-evszak-container ul#menu-sidebar-evszak.menu li a {
+    font-family: 'Amatic SC', cursive;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    color: #4D4D4D; }
+  div.menu-sidebar-evszak-container ul#menu-sidebar-evszak.menu li a:hover {
+    color: #A29061; }
+div.menu-sidebar-evszak-container ul#menu-sidebar-evszak.menu li.current-menu-item a {
+  color: #A29061; }
+
+div.menu-sidebar-nemek-container ul#menu-sidebar-nemek.menu li {
+  display: block; }
+  div.menu-sidebar-nemek-container ul#menu-sidebar-nemek.menu li a {
+    font-family: 'Amatic SC', cursive;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    color: #4D4D4D; }
+  div.menu-sidebar-nemek-container ul#menu-sidebar-nemek.menu li a:hover {
+    color: #A29061; }
+div.menu-sidebar-nemek-container ul#menu-sidebar-nemek.menu li.current-menu-item a {
+  color: #A29061; }
+
 /*--------------------------------------------------------------
 # woostyles
 --------------------------------------------------------------*/
+.main-container-woo {
+  width: 94%;
+  max-width: 960px;
+  margin: 20px auto 0 auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+  .main-container-woo .woo-contentbox {
+    width: 80%; }
+  .main-container-woo .woo-sidebarbox {
+    width: 18%; }
+
+@media (max-width: 790px) {
+  .main-container-woo .woo-contentbox {
+    width: 100%; }
+  .main-container-woo .woo-sidebarbox {
+    display: none; } }
+.woocommerce ul.products li.product .button {
+  display: none; }
+
+.woocommerce ul.products li.product h3 {
+  font-family: 'Amatic SC', cursive;
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  color: #4D4D4D; }
+
+div.summary.entry-summary {
+  padding: 0 15px 0 15px; }
+
+h1.product_title.entry-title {
+  font-size: 30px;
+  text-align: left; }
+
 /*--------------------------------------------------------------
 # pages
 --------------------------------------------------------------*/
