@@ -1,0 +1,22 @@
+@import 'https://fonts.googleapis.com/css?family=Josefin+Sans:100,300,400,600,700&subset=latin,latin-ext';
+@import 'https://fonts.googleapis.com/css?family=Amatic+SC:400,700&subset=latin-ext';
+@import 'https://fonts.googleapis.com/css?family=Didact+Gothic&subset=latin-ext';
+
+body{
+   // font-family: 'Josefin Sans', sans-serif;
+   font-family: 'Didact Gothic', sans-serif;
+   color: $main-text;
+}
+
+h1{
+   font-family: 'Amatic SC', cursive;
+   font-size: 60px;
+   font-weight: bold;
+   text-align: center;
+}
+
+h2{
+   font-family: 'Amatic SC', cursive;
+   font-size: 40px;
+   color: $text-highlight;
+}

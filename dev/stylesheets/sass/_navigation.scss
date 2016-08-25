@@ -1,3 +1,33 @@
 // ***************************************************************
 // main navigation
 // ***************************************************************
+nav#site-navigation.main-navigation{
+   ul{
+      height: 68px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      li{
+         a{
+            font-family: 'Josefin Sans', sans-serif;
+            font-size: 15px;
+            font-weight: bold;
+            color:$main-text;
+            text-shadow: 0px 4px 4px rgba(0,0,0,0.50);
+            text-transform: uppercase;
+            padding: 0 0 0 28px;
+         }
+      }
+      li:first-child{
+         a{
+            padding:0;
+         }
+      }
+   }
+}
+
+@media(max-width: 750px){
+   nav#site-navigation.main-navigation{
+      display: none;
+   }
+}

@@ -98,6 +98,20 @@ function gyereksapka_widgets_init()
 }
 add_action('widgets_init', 'gyereksapka_widgets_init');
 
+function gyereksapka_offcanvas_widget()
+{
+    register_sidebar(array(
+        'name' => esc_html__('offcanvas_widget', 'gyereksapka'),
+        'id' => 'offcanvas_widget',
+        'description' => esc_html__('Add widgets here.', 'gyereksapka'),
+        'before_widget' => '<section id="%1$s" class="widget %2$s">',
+        'after_widget' => '</section>',
+        'before_title' => '<h2 class="widget-title">',
+        'after_title' => '</h2>',
+    ));
+}
+add_action('widgets_init', 'gyereksapka_offcanvas_widget');
+
 /**
  * Enqueue scripts and styles.
  */
@@ -112,6 +126,8 @@ function gyereksapka_scripts()
     wp_enqueue_script('gyereksapka-jquery', get_template_directory_uri().'/dev/zurb/bower_components/jquery/dist/jquery.min.js');
 
     wp_enqueue_script('gyereksapka-f6_main_script', get_template_directory_uri().'/dev/zurb/bower_components/foundation-sites/dist/foundation.min.js');
+
+    wp_enqueue_script('gyereksapka-skip-link-focus-fix', get_template_directory_uri().'/js/skip-link-focus-fix.js', array(), '20151215', true);
 
     if (is_singular() && comments_open() && get_option('thread_comments')) {
         wp_enqueue_script('comment-reply');

@@ -1,8 +1,19 @@
 body{
+   background-image: url(img/body-background.jpg);
 }
 
 .clear{
    clear: both;
+}
+
+#page.site{
+   background-image: url(img/body-background.jpg);
+}
+
+.main-container{
+   max-width: 960px;
+   width: 94%;
+   margin: 0 auto;
 }
 
 // ***************************************************************
@@ -14,4 +25,88 @@ body{
 
 .off-canvas position-left{
    width: 500px;
+}
+
+// ***************************************************************
+// header
+// ***************************************************************
+
+header#masthead.site-header{
+   .main-container{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 0 0 0;
+      .logo-cont{
+         background-image: url(img/fules-gyereksapka-logo.png);
+         width: 128px;
+         height: 121px;
+      }
+   }
+}
+
+@media(min-width: 750px){
+   #mobil-button{
+      display: none;
+   }
+}
+
+
+// ***************************************************************
+// footer
+// ***************************************************************
+footer#colophon{
+   width: 100%;
+   height: 134px;
+   background-image: url(img/footer-background.png);
+   background-position: bottom center;
+   .main-container{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: baseline;
+   }
+}
+
+#footer-site-info{
+   p{
+      color: rgba(255, 255, 255, 0.81);
+      margin-top: 72px;
+   }
+}
+
+#footer-social-cont{
+   a{
+      img{
+         margin-left: 20px;
+      }
+   }
+}
+
+@media(max-width: 540px){
+   footer#colophon{
+      .main-container{
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+      }
+   }
+   #footer-site-info{
+      p{
+         margin-top: 40px;
+      }
+   }
+   #footer-social-cont{
+      p{
+         margin-top: 0;
+      }
+      a{
+         img{
+            margin: 0 10px 10px 10px;
+         }
+      }
+   }
+
 }
