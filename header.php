@@ -48,12 +48,7 @@
          <!-- MOBILE MENU BUTTON -->
          <button type="button" class="button" id="mobil-button" data-toggle="offCanvas"></button><!-- off canvas toggle -->
 
-
-
-      </div>
-
-
-
+      </div><!-- main-container -->
 	</header><!-- #masthead -->
 
 	<div id="content" class="site-content">
